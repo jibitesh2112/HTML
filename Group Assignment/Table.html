@@ -1,0 +1,1182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>HTML TABLES</title>
+</head>
+<style>
+    body{
+         color:rgb(7, 7, 7);
+        font-family: sans-serif;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-style: ridge;
+        border-width: 17px;
+        border-color: rgb(2, 37, 52);
+    
+    }
+    
+    h1{
+        font-size: 50px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(7, 39, 53);
+        background-color: rgb(155, 209, 243);
+    }
+    h2{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: rgb(10, 138, 218);
+         text-decoration-line: underline;
+    }
+    .exmpl{
+        font-weight: bold;
+    }
+    .input{
+        color:black;
+        background: rgb(209, 225, 245);
+                width: 50%;
+        font-family: monospace;        
+               
+    }
+    .output{
+        color:rgb(247, 253, 253);
+        background-color: #080e12;
+        width:50%;
+        border-radius: 5px;
+    }
+    table{
+        border-color: aliceblue;
+    }
+    .connect{
+       
+       text-align: center;
+        bottom: 35px;
+        color: beige;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: cursive;
+        font-size: larger;
+        background-color: rgb(6, 36, 50);
+        border-radius: 5px;
+    }
+    #adc
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+</style>
+<body>
+    <div class="container-fluid" id="adc" style="margin-top: -80px; color: mediumturquoise; margin-left: -80px;padding: 0px; position: fixed; height: 50px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        <div class="row" id="adc">
+        <div class="col-md-2" style="font-size: 30px;"><a href="Home.html">Home</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Basics.html">Basics</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Tags.html">Tags</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Links.html">Links</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Table.html">Tables</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Lists.html">Lists</a></div>
+    </div>
+</div>
+<div class="container-fluid" id="adc" style="margin-top: 460px;margin-left: -80px; color: mediumturquoise;padding: 0px; position: fixed; height: 70px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">Jibitesh Jena</div>
+                <div class="col-md-2" style="font-size: 20px;">Darshit Thakkar</div>
+                <div class="col-md-2" style="font-size: 20px;">Priyanshu Sonthalia</div>
+                <div class="col-md-2" style="font-size: 20px;">Venkateshh Moningi</div>
+                <div class="col-md-2" style="font-size: 20px;">Abhigna Kandala</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">2005101</div>
+                <div class="col-md-2" style="font-size: 20px;">20051344</div>
+                <div class="col-md-2" style="font-size: 20px;">20051357</div>
+                <div class="col-md-2" style="font-size: 20px;">20051422</div>
+                <div class="col-md-2" style="font-size: 20px;">20051964</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+</div>
+
+ <h1>HTML Tables</h1> 
+ <p>HTML Table is an arrangement of data in rows and columns, or possibly in a more complex structure. Tables are widely used in communication, research, and data analysis. Tables are useful for various tasks such as presenting text information and numerical data. It can be used to compare two or more items in the tabular form layout. Tables are used to create databases.</p>
+ <h2>Defining Tables in HTML:</h2><p> An HTML table is defined with the “table” tag. Each table row is defined with the “tr” tag. A table header is defined with the “th” tag. By default, table headings are bold and centered. A table data/cell is defined with the “td” tag.
+</p>
+
+  <p1>
+  <div class="exmpl">Example 2:</div> This example explains the use of the HTML Table.
+
+
+<xmp class="input"><!DOCTYPE html>
+<html>
+ 
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output"><!DOCTYPE html>
+    <html>
+     
+    <body>
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>41</td>
+            </tr>
+        </table>
+    </body>
+     
+    </html></div>
+
+
+Simple HTML Table
+
+<h2><p2>Accepted Attributes:</h2><br>
+
+&lt;table &gt; cellspacing Attribute<br>
+&lt;table&gt; rules Attribute <br>
+<h2>Adding a border to an HTML Table:</h2> A border is set using the CSS border property. If you do not specify a border for the table, it will be displayed without borders.
+<br>
+<div class="exmpl">Example 3:</div> This example explains the addition of the border to the HTML Table.<br>
+
+
+<xmp class="input"><!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output"><!DOCTYPE html>
+    <html>
+     
+    <head>
+        <style>
+        table{
+            color:aliceblue;
+        }
+        th,
+        td {
+            border: 1px solid rgb(252, 252, 252);
+        }
+        </style>
+    </head>
+     
+    <body>
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>41</td>
+            </tr>
+        </table>
+    </body>
+     
+    </html></div>
+
+
+<div class="table-info">HTML Table with border </div><br>
+
+<h2>Adding Collapsed Borders in an HTML Table:</h2> For borders to collapse into one border, add the CSS border-collapse property.<br>
+
+
+
+<div class="exmpl">Example 4:</div> This example describes the addition of Collapsed Borders in HTML.<br>
+
+
+<xmp class="input"><!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+<br>
+ Output:<br>
+ <div class="output"><!DOCTYPE html>
+    <html>
+     
+    <head>
+        <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        </style>
+    </head>
+     
+    <body>
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>41</td>
+            </tr>
+        </table>
+    </body>
+     
+    </html></div>
+
+
+<div class="table-info">HTML Table with Collapsed Borders</div><br>
+
+<h2>Adding Cell Padding in an HTML Table:</h2> Cell padding specifies the space between the cell content and its borders. If we do not specify a padding, the table cells will be displayed without padding.
+
+<br>
+
+<div class="exmpl">Example 5:</div> This example describes the addition of Table cell padding in HTML.<br>
+
+
+<xmp class="input">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+<br>
+Output:<br>
+<div class="output">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></div>
+
+Adding Table cell padding<br>
+
+<h2>Adding Left Align Headings in an HTML Table:</h2> By default, the table headings are bold and centered. To left-align the table headings, we must use the CSS text-align property.
+<br>
+
+
+<div class="exmpl">Example 6:</div> This example explains the text-align property where the text is aligned to the left.<br>
+
+
+<xmp class="input">
+    <!DOCTYPE html>
+    <html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+     
+    th {
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html>
+</xmp>
+Output:<br>
+<div class="output">
+    <!DOCTYPE html>
+    <html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+     
+    th {
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html>
+</div>
+
+<div >text-align Property</div><br>
+
+<h2>Adding Border Spacing in an HTML Table:</h2><br> Border spacing specifies the space between the cells. To set the border-spacing for a table, we must use the CSS border-spacing property.
+<br>
+
+
+<div class="exmpl">Example 7:</div> This example explains the border space property to make the space between the Table cells.<br>
+
+
+<xmp class="input"><html>
+ 
+<head>
+    <style>r
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+     
+    table {
+        border-spacing: 5px;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output">
+ 
+    <head>
+        <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+         
+        table {
+            border-spacing: 5px;
+        }
+        </style>
+    </head>
+     
+    <body>
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Priya</td>
+                <td>Sharma</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Arun</td>
+                <td>Singh</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Sam</td>
+                <td>Watson</td>
+                <td>41</td>
+            </tr>
+        </table>
+    </body>
+     
+    </div>
+
+<div class="tag">Border Spacing Property</div><br>
+
+<h2>Adding Cells that Span Many Columns in HTML Tables: </h2><br>To make a cell span more than one column, we must use the colspan attribute.<br>
+
+<div class="exmpl">Example 8:</div> This example describes the use of the colspan attribute in HTML.<br>
+
+
+<xmp class="input"><!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <div>Cell that spans two columns:</div>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Vikas Rawat</td>
+            <td>9125577854</td>
+            <td>8565557785</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output"><!DOCTYPE html>
+    <html>
+     
+    <head>
+        <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+         
+        th,
+        td {
+            padding: 5px;
+            text-align: left;
+        }
+        </style>
+    </head>
+     
+    <body>
+        <div>Cell that spans two columns:</div>
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Vikas Rawat</td>
+                <td>9125577854</td>
+                <td>8565557785</td>
+            </tr>
+        </table>
+    </body>
+     
+    </html></div>
+
+<div class="tag">colspan attribute</div><br>
+
+<h2>Adding Cells that span many rows in HTML Tables:</h2><br> To make a cell span more than one row, we must use the rowspan attribute.<br>
+
+<div class="exmpl">Example 9:</div> This example describes the use of the rowspan attribute in HTML.<br>
+
+
+<xmp class="input">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <div>Cell that spans two rows:</div>
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Vikas Rawat</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>9125577854</td>
+        </tr>
+        <tr>
+            <td>8565557785</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <div>Cell that spans two rows:</div>
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Vikas Rawat</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>9125577854</td>
+        </tr>
+        <tr>
+            <td>8565557785</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></div>
+
+<div class="tag">Use of rowspan attribute</div><br>
+
+<h2>Adding a Caption in an HTML Table:</h2><br>
+To add a caption to a table, we must use the “caption” tag.<br>
+
+
+
+<div class="exmpl">Example 10:</div> This example describes the HTML Table caption by specifying the CSS properties for setting its width.<br>
+
+
+<xmp class="input">
+    <html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+     
+    th {
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <caption>DETAILS</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output">
+    <html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 20px;
+    }
+     
+    th {
+        text-align: left;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <caption>DETAILS</caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></div>
+
+<div class="tag">Adding the caption using the &lt;caption&gt; tag</div><br>
+
+<h2>Adding a Background Colour to the Table:</h2><br> A color can be added as a background in an HTML table using the “background-color” option.<br>
+
+
+
+<div class="exmpl">Example 11:</div> This example describes the addition of the Table background color in HTML.<br>
+
+
+<xmp class="input">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+     
+    table#t01 {
+        width: 100%;
+        background-color: #f2f2d1;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:
+<br>
+<div class="output">
+    <!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+     
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+    }
+     
+    table#t01 {
+        width: 100%;
+        background-color: #f2f2d1;
+        color:#080e12;
+    }
+    </style>
+</head>
+ 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>Sharma</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Arun</td>
+            <td>Singh</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Watson</td>
+            <td>41</td>
+        </tr>
+    </table>
+</body>
+ 
+</html></div>
+<div class="tag">Adding Table Background color using CSS properties </div><br>
+
+<h2>Creating Nested Tables:</h2> <br>Nesting tables simply means making a Table inside another Table. Nesting tables can lead to complex tables layouts, which are visually interesting and have the potential of introducing errors. 
+<br>
+<div class="exmpl">Example 12:</div> This example describes the Nested of HTML Table.<br>
+
+
+<xmp class="input"><!DOCTYPE html>
+<html>
+ 
+<body>
+    <table border=5 bordercolor=white>
+        <tr>
+            <td> First Column of Outer Table </td>
+            <td>
+                <table border=5 bordercolor=grey>
+                    <tr>
+                        <td> First row of Inner Table </td>
+                    </tr>
+                    <tr>
+                        <td> Second row of Inner Table </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+ 
+</html></xmp>
+Output:<br>
+<div class="output"><!DOCTYPE html>
+    <html>
+     
+    <body>
+        <table border=5 bordercolor=white>
+            <tr>
+                <td> First Column of Outer Table </td>
+                <td>
+                    <table border=5 bordercolor=white>
+                        <tr>
+                            <td> First row of Inner Table </td>
+                        </tr>
+                        <tr>
+                            <td> Second row of Inner Table </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+     
+    </html></div>
+
+<div class="tag">Nested HTML Table</div><br>
+
+<div class="connect">
+    <p>KANDALA ABHIGNA</p><p>20051694</p>
+    <a href="https://www.linkedin.com/in/abhigna-kandala" title="Linkdin"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKj7r-DnJ0tXk9K6UpqmU_KNLHICaPcpyF4tdxljaybAxeR664p_X8o8iYG1kqKJod6QA&usqp=CAU" style="height:35px;"></a>
+    <a href="mailto:20051694@kiit.ac.in" title="20051694@kiit.ac.in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuzL6Zu0Yt5CppZZ6rwJF8Oo1tYogEXI19iikuvhMHIC6U1BH0ElbvndoH-a60msW_zrc&usqp=CAU" style="height:35px"></a>
+</div>
+</p2>
+</body>
+</html>

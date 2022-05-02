@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <title>HTML Links</title>
+        <style>
+            h1 {
+                color:#00394f;
+                background-color:#91d9e4;
+                font-size: 50px;
+                border-radius: 3px;
+            }
+            h2{
+                color:#17a2b8;
+            }
+            body {
+                background-color:aliceblue;
+                color:#343a40;
+                padding-left: 20px;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom: 200px;
+                border: #00394f;
+                border-style:ridge ;
+                border-width: 20px;
+            }
+           .box {
+              background-color:#00394f;
+              color:aliceblue;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight:bold;
+              padding:15px;
+              float:left;
+              border-radius: 3px;
+           }
+           .connect {
+               position:fixed;
+               bottom:30px;
+               right:28px;
+               color:aliceblue;
+               background-color:#17a2b8;
+               padding-right:120px;
+               padding-top:8px;
+               padding-left:15px;
+               padding-bottom:8px;
+               border-radius: 10px 5px 5px 10px;
+               line-height:2px;
+               
+           }
+           a {
+               color:#00394f;
+               font-weight:bold;
+           }
+        </style>
+    </head>
+    <body><div class="container-fluid" id="adc" style="margin-top: -40px; color: mediumturquoise; margin-left: -40px;padding: 0px; position: fixed; height: 50px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        <div class="row" id="adc">
+        <div class="col-md-2" style="font-size: 30px;"><a href="Home.html"><center>Home</center></a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Basics.html">Basics</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Tags.html">Tags</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Links.html">Links</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Table.html">Tables</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Lists.html">Lists</a></div>
+    </div>
+</div>
+<div class="container-fluid" id="adc" style="margin-top: 492px;margin-left: -80px; color: mediumturquoise;padding: 0px; position: fixed; height: 70px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">Jibitesh Jena</div>
+                <div class="col-md-2" style="font-size: 20px;">Darshit Thakkar</div>
+                <div class="col-md-2" style="font-size: 20px;">Priyanshu Sonthalia</div>
+                <div class="col-md-2" style="font-size: 20px;">Venkateshh Moningi</div>
+                <div class="col-md-2" style="font-size: 20px;">Abhigna Kandala</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">2005101</div>
+                <div class="col-md-2" style="font-size: 20px;">20051344</div>
+                <div class="col-md-2" style="font-size: 20px;">20051357</div>
+                <div class="col-md-2" style="font-size: 20px;">20051422</div>
+                <div class="col-md-2" style="font-size: 20px;">20051964</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+</div>
+
+        <h1 style="text-align: center;">HTML Links</h1>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <h2>HTML Links - Hyperlinks</h2>
+        <p>
+            HTML links are hyperlinks.
+            You can click on a link and jump to another document.
+            When you move the mouse over a link, the mouse arrow will turn into a little hand.
+        </p>
+        <h2>HTML Links - Syntax</h2>
+        <p>
+            The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:
+            <div class="box">&lt;a href="url"&gt;Link text &lt;/a&gt;</div><br><br>
+            <br>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.<br>
+                The link text is the part that will be visible to the reader.<br>
+                Clicking on the link text, will send the reader to the specified URL address.
+                <div class="box"> &lt;a href="https://kiitportal.kiituniversity.net/irj/portal/"&gt;Visit kiitportal.com</div><br><br><br><br>
+                <a href="https://drive.google.com/file/d/17MEwIbecB8z5Z3R1FGsNSs1iAeobI8ee/view?usp=sharing">click here for output</a><br>
+                By default, links will appear as follows in all browsers:
+                <ul>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
+                </ul>
+        </p>
+        <h2>HTML Links - The target Attribute</h2>
+        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+            The target attribute specifies where to open the linked document.
+            The target attribute can have one of the following values:
+            <ul>
+                <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+                <li>_blank - Opens the document in a new window or tab</li>
+                <li>_parent - Opens the document in the parent frame</li>
+                <li>_top - Opens the document in the full body of the window</li>
+            </ul>
+            <div class="box">&lt;a href="https://kiitportal.kiituniversity.net/irj/portal/" target="_blank"> Visit kiitportal.com &gt;/a&gt;</div><br><br><br>
+        </p>
+        <h2>Absolute URLs vs. Relative URLs</h2>
+        <p>
+            Both examples above are using an absolute URL (a full web address) in the href attribute.
+            A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+        </p>
+        <h2>HTML Links - Use an Image as a Link</h2>
+        <p>
+            To use an image as a link, just put the &lt;img&gt; tag inside the &it;a&gt; tag:
+        
+        <div class="box">
+            &lt;a href= "default.asp" &gt;
+            &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;
+            &lt; /a &gt;
+        </div><br><br><br>
+        <a href="https://drive.google.com/file/d/1E1KQ1K70mSdN6D706Qixce_sV41ZHsPZ/view?usp=sharing">click here for output</a>
+        </p>
+        <h2>Link to an Email Address</h2>
+        <p>
+            Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+            <div class="box">
+                &lt;a href="mailto:someone@example.com"&gt;Send email&lt;/a&gt;
+            </div><br><br><br>
+            <a href="https://drive.google.com/file/d/1994ZjSN_72B8V6KOQztoO4jwRaFgINNd/view?usp=sharing">click here for output</a>
+        </p>
+        <h2>Button as a Link</h2>
+        <p>
+            To use an HTML button as a link, you have to add some JavaScript code.
+            JavaScript allows you to specify what happens at certain events, such as a click of a button:
+        </p>
+        <div class="box">
+            &lt;button onclick="document.location='default.asp'"&gt;HTML Tutorial&lt;/button&gt;
+        </div><br><br><br>
+        <a href="https://drive.google.com/file/d/1--tCoaJJBkF3xZBcYEEb1Pd-K3J1EzZg/view?usp=sharing">click here for output</a>
+        <h2>Link Titles</h2>
+        <p>
+            The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.
+        </p>
+        <div class="box">
+            &lt;a href="https://www.w3schools.com/html/" title="Go to HTML section"&gt;Visit our HTML Tutorial&lt;/a&gt;<br>
+        </div><br><br><br>
+        <a href="https://drive.google.com/file/d/1HBsWs-pbVm6thzp0T5x0h8A-iKflkZUz/view?usp=sharing">click here for output</a>
+        <div class="connect">
+            <p>Venkateshh M</p><p>20051422</p>
+            <a href="https://www.linkedin.com/in/hithisisvenkateshh/" title="Linkdin"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKj7r-DnJ0tXk9K6UpqmU_KNLHICaPcpyF4tdxljaybAxeR664p_X8o8iYG1kqKJod6QA&usqp=CAU" style="height:35px;"></a>
+            <a href="mailto:20051422@kiit.ac.in" title="20051422@kiit.ac.in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuzL6Zu0Yt5CppZZ6rwJF8Oo1tYogEXI19iikuvhMHIC6U1BH0ElbvndoH-a60msW_zrc&usqp=CAU" style="height:35px"></a>
+        </div>
+
+    </body>
+</html>

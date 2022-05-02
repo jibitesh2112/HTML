@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title>HTML Links</title>
+        <style>
+            h1 {
+                color:#00394f;
+                background-color:#91d9e4;
+                font-size: 50px;
+                border-radius: 3px;
+            }
+            h2{
+                color:#17a2b8;
+            }
+            body {
+                background-color:aliceblue;
+                color:#343a40;
+                padding-left: 20px;
+                padding-top:20px;
+                padding-right:20px;
+                padding-bottom: 200px;
+                border: #00394f;
+                border-style:ridge ;
+                border-width: 20px;
+            }
+           .box {
+              background-color:#00394f;
+              color:aliceblue;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight:bold;
+              padding:15px;
+              float:left;
+              border-radius: 3px;
+           }
+           .connect {
+               position:fixed;
+               bottom:30px;
+               right:27px;
+               color:aliceblue;
+               background-color:#17a2b8;
+               padding-right:120px;
+               padding-top:8px;
+               padding-left:15px;
+               padding-bottom:8px;
+               border-radius: 10px 5px 5px 10px;
+               line-height:2px;
+               
+           }
+           a {
+               color:#00394f;
+               font-weight:bold;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" id="adc" style="margin-top: -40px; color: mediumturquoise; margin-left: -40px;padding: 0px; position: fixed; height: 50px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        <div class="row" id="adc">
+        <div class="col-md-2" style="font-size: 30px;"><a href="Home.html"><center>Home</center></a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Basics.html">Basics</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Tags.html">Tags</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Links.html">Links</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Table.html">Tables</a></div>
+        <div class="col-md-2" style="font-size: 30px;"><a href="Lists.html">Lists</a></div>
+    </div>
+</div>
+<div class="container-fluid" id="adc" style="margin-top: 490px;margin-left: -80px; color: mediumturquoise;padding: 0px; position: fixed; height: 70px;width: 1300px;background-color:rgb(7, 39, 53); ">
+        
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">Jibitesh Jena</div>
+                <div class="col-md-2" style="font-size: 20px;">Darshit Thakkar</div>
+                <div class="col-md-2" style="font-size: 20px;">Priyanshu Sonthalia</div>
+                <div class="col-md-2" style="font-size: 20px;">Venkateshh Moningi</div>
+                <div class="col-md-2" style="font-size: 20px;">Abhigna Kandala</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+            <div class="row" id="adc">
+                <div class="col-md-1">&nbsp;</div>
+                <div class="col-md-2" style="font-size: 20px;">2005101</div>
+                <div class="col-md-2" style="font-size: 20px;">20051344</div>
+                <div class="col-md-2" style="font-size: 20px;">20051357</div>
+                <div class="col-md-2" style="font-size: 20px;">20051422</div>
+                <div class="col-md-2" style="font-size: 20px;">20051964</div>
+                <div class="col-md-1">&nbsp;</div>
+            </div>
+</div>
+
+        <h1 style="text-align: center;">Tags and elements</h1>
+        <p>
+            An HTML tag is a special word or letter surrounded by angle brackets, < and >. You use tags to create HTML elements, such as paragraphs or links.
+
+            Many elements have an opening tag and a closing tag — for example, a p (paragraph) element has a &lt;p&gt; tag, followed by the paragraph text, followed by a closing &lt;/p&gt; tag.Some elements don’t have a closing tag. These are called empty elements. For example, the br element for inserting line breaks is simply written &lt;br&gt;.
+
+            If you’re working with XHTML then you write empty elements using self-closing tags — for example, &lt;br&gt; />.<br><br> 
+
+            Now let’s look at top used 10 tags!
+        </p>
+            <h2>&lt;1. html&gt; … &lt;/html&gt; — The root element</h2>
+                <p>
+                    All web pages start with the html element. It’s also called the root element because it’s at the root of the tree of elements that make up a web page.<br>
+                    <img src="https://www.elated.com/res/Image/articles/authoring/html/first-10-html-tags/html-document-tree.png"><br>
+                    To create the html element, you write an opening &lt;html&gt; tag followed by a closing &lt;/html&gt; tag. Everything else in your web page then goes between these 2 tags:
+                    <div class="box">&lt;html&gt;
+                        (all other page elements go here)
+                      &lt;/html&gt;
+                    </div><br><br>
+                </p>
+            <h2><br>2. &lt;head&gt; … &lt;/head&gt; — The document head</h2>
+        <p>
+            The head element contains information about the web page, as opposed to the web page content itself. There are many elements that you can put inside the head element, such as:
+            <ul>
+                <li>title (described below)</li>
+                <li>link, which you can use to add style sheets and favicons to your page</li>
+                <li>meta, for specifying things like character sets, page descriptions, and keywords for search engines</li>
+                <li>script, for adding JavaScript code to the page</li>
+            </ul>
+            Here's a typical head element:
+        </p>
+        <div class="box"><xmp><head>
+            <title>The Adventures of My Cat Lucky</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="description" content="The adventures of my favourite pet cat Lucky, with stories, pictures and movies.">
+            <meta name="keywords" content="cat,Lucky,pet,animal">
+            <link rel="stylesheet" type="text/css" href="/style.css">
+            <link rel="shortcut icon" href="/favicon.ico">
+        </head></xmp>
+        </div><br><br><br><br><br><br><br><br><br>       
+        <h2><br>3. &lt;title&gt; … &lt;/title&gt; — The page title</h2>
+        <p>
+            The title element contains the title of the page. The title is displayed in the browser’s title bar (the bar at the top of the browser window), as well as in bookmarks, search engine results, and many other places.<br>
+
+            The title should describe the page’s content succinctly and accurately. Try to give each page of your site its own unique title.<br><br>
+            Here's an example:
+            <div class="box">&lt;title&gt;The Adventures of My Cat Lucky&lt;/title&gt;
+            </div><br><br>
+        </p>
+        <h2><br>4. &lt;body&gt; … &lt;/body&gt; — The page’s content</h2>
+        <p>
+            The body element appears after the head element in the page. It should contain all the content of your web page: text, images, and so on. All web pages have 1 single body element, with the exception of frameset pages, which contain frame elements instead.
+
+            <br>Here’s the general format of the body element:
+            <div class="box">&lt;body&gt;
+                (all page content goes here)
+            &lt;/body&gt;
+              </div><br><br>
+        </p>
+        <h2><br>5. &lt;h1&gt; … &lt;/h1&gt; — A section heading</h2>
+        <p>Headings let you break up your page content into readable chunks. They work much like headings and subheadings in a book or a report.
+
+            HTML actually supports 6 heading elements: h1, h2, h3, h4, h5, and h6. h1 is for the most important headings, h2 is for less important subheadings, and so on. Typically you won’t need to use more than h1, h2 and h3, unless your page is very long and complex.<br><br>
+            
+            Here’s an example of an h1 heading element:
+            <div class="box"><xmp><h1>The Adventures of My Cat Lucky</h1></xmp>
+            </div><br><br><br>
+        </p>
+        <h2><br>6. &lt;p&gt; … &lt;/p&gt; — A paragraph</h2>
+        <p>The p element lets you create paragraphs of text. Most browsers display paragraphs with a vertical gap between each paragraph, nicely breaking up the text.
+
+            While you can create “paragraphs” of text just by using &lt;br&gt; tags to insert blank lines between chunks of text, it’s better to use p elements instead. Not only is it neater, but it gives browsers, search engines and other non-humans a better idea of how your page is structured.<br><br>
+            Here’s an example of a paragraph:<br>
+            A good rule of thumb when writing text for the web is to make sure that each paragraph contains a single point, topic or thought. If you want to talk about 2 different things, use 2 paragraphs.
+            <div class="box"><xmp><p>My cat Lucky has a lot of adventures. Yesterday she caught a mouse, and this morning she caught two!</p></xmp></div><br><br><br>
+        </p>
+        <h2><br>7. &lt;a&gt; … &lt;/a&gt; — A link&lt;/h2&gt;</h2>
+        <p>One of the most important elements in a web page, the a element lets you create links to other content. The content can be either on your own site or on another site.
+
+            To create a link, you wrap &lt;a&gt; and &lt;/a&gt; tags around the content you want to use for the link, and supply the URL to link to in the &lt;a&gt; tag’s href attribute.<br><br>
+            
+            Here’s how to create some text that links to www.example.com:
+            <div class="box"><xmp><a href="http://www.example.com/">Visit this great website!</a></xmp></div><br><br><br>
+        </p>
+        <h2><br>8. &lt;img&gt; — An image</h2>
+        <p>
+            The img element lets you insert images into your web pages. To insert an image, you first upload the image to your web server, then use an &lt;img&gt; tag to reference the uploaded image filename.<br><br>
+             Here’s an example:<br>
+            <div class="box"><xmp><img src="myphoto.jpg" alt="My Photo"></xmp></div><br><br><br><br>
+             The alt attribute is required for all img tags. It’s used by browsers that don’t display images to give alternative text to the visitor.
+        </p>
+        <h2>9. &lt;div&gt; … &lt;/div&gt; — A block-level container for content</h2>
+        <p>
+            The div element is a generic container that you can use to add more structure to your page content. For example, you might group several paragraphs or headings that serve a similar purpose together inside a div element. Typically, div elements are used for things like:<br>
+            <ul>
+                <li>Page header and footers</li>
+                <li>Columns of content and sidebars</li>
+                <li>Highlighted boxes within the text flow</li>
+                <li>Areas of the page with a specific purpose, such as ad spots</li>
+                <li>Image galleries</li>
+            </ul>
+            By adding class and/or id attributes to your div elements, you can then use CSS to style and position the divs. This is the basis for creating CSS-based page layouts.<br>
+            Here’s an example that uses a div to contain the content for a sidebar in the page:<br>
+            <div class="box"><xmp><div id="sidebar">
+                <h1>Sidebar Heading</h1>
+                <p>Sidebar text</p>
+                <p>More sidebar text</p>
+            </div></xmp>
+            </div><br><br><br><br><br><br><br>
+        </p>
+        <h2><br>10. &lt;span&gt; … &lt;/span&gt; — An inline container for content</h2>
+        <p>
+            The span element is similar to div in that it’s used to add structure to your content. The difference is that div is a block-level element, while span is an inline element:<br>
+            <ul>
+                <li>Block-level elements, such as div, h1, and p, are elements that are designed to hold relatively large or stand-alone blocks of content, such as paragraphs of text. A block-level element always starts on a new line.</li>
+                <li>Inline elements, such as span, a, and img, are designed to hold smaller pieces of content — such as a few words or a sentence — within a larger block of content. Adding an inline element doesn’t cause a new line to be created. Block-level elements can contain inline elements, but inline elements can’t contain block-level elements.</li>
+            </ul>
+            As with a div, you often add a class and/or id attribute to a span so that you can style it using CSS.<br><br>
+            The following example uses span elements to indicate product names within a paragraph. These product names could then be highlighted using CSS. A custom search engine could also potentially use the information provided by the span elements to identify the products within the page.
+            <div class="box"><xmp><p>Some of our products include <span class="product">SuperWidgets</span>, <span class="product">MegaWidgets</span>, and <span class="product">WonderWidgets</span>.</p>
+            </xmp></div>
+        </p>
+        <div class="connect">
+            <p>Venkateshh M</p><p>20051422</p>
+            <a href="https://www.linkedin.com/in/hithisisvenkateshh/" title="Linkdin"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKj7r-DnJ0tXk9K6UpqmU_KNLHICaPcpyF4tdxljaybAxeR664p_X8o8iYG1kqKJod6QA&usqp=CAU" style="height:35px;"></a>
+            <a href="mailto:20051422@kiit.ac.in" title="20051422@kiit.ac.in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuzL6Zu0Yt5CppZZ6rwJF8Oo1tYogEXI19iikuvhMHIC6U1BH0ElbvndoH-a60msW_zrc&usqp=CAU" style="height:35px"></a>
+        </div>
+
+    </body>
+</html>
