@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>3D Cube</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 5em;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      perspective: 1000px;
+      perspective-origin: 400% -200%;
+      box-shadow: -5px 50px 45px 0 #6f6f6fd6;
+    }
+
+    .cube {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+    }
+
+    .side {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: 58px;
+      font-weight: bold;
+    }
+
+    .spin {
+      animation: spin cubic-bezier(0.21, 0.79, 0.29, .88);
+    }
+
+    .spinback {
+      animation: spinback cubic-bezier(0.21, 0.79, 0.29, .88);
+    }
+
+    .d1 {
+      animation-duration: 3000ms;
+    }
+
+    .d2 {
+      animation-duration: 3100ms;
+    }
+
+    .d3 {
+      animation-duration: 3300ms;
+    }
+
+    .d4 {
+      animation-duration: 3500ms;
+    }
+
+    .d5 {
+      animation-duration: 3700ms;
+    }
+
+    .d6 {
+      animation-duration: 3900ms;
+    }
+
+    .d7 {
+      animation-duration: 4100ms;
+    }
+
+    .d8 {
+      animation-duration: 4300ms;
+    }
+
+    .b {
+      background: #000000;
+      color: #ffffff;
+    }
+
+    .w {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .top {
+      transform: rotateX(90deg) translateZ(25px);
+    }
+
+    .bottom {
+      transform: rotateX(-90deg) translateZ(25px);
+    }
+
+    .front {
+      transform: rotateY(0deg) translateZ(25px);
+    }
+
+    .back {
+      transform: rotateY(180deg) translateZ(25px);
+    }
+
+    .right {
+      transform: rotateY(90deg) translateZ(25px);
+    }
+
+    .left {
+      transform: rotateY(-90deg) translateZ(25px);
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotateX(660deg);
+      }
+
+      to {
+        transform: rotateX(0deg)
+      }
+    }
+
+    @keyframes spinback {
+      from {
+        transform: rotateX(-660deg);
+      }
+
+      to {
+        transform: rotateX(0deg)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="cube d1 spin">
+        <div class="side front b">J</div>
+        <div class="side back b">J</div>
+        <div class="side top w">J</div>
+        <div class="side bottom w">J</div>
+        <div class="side left b">J</div>
+        <div class="side right w">J</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d2 spinback">
+        <div class="side front w">I</div>
+        <div class="side back w">I</div>
+        <div class="side top b">I</div>
+        <div class="side bottom b">I</div>
+        <div class="side left w">I</div>
+        <div class="side right b">I</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d3 spin">
+        <div class="side front b">B</div>
+        <div class="side back b">B</div>
+        <div class="side top w">B</div>
+        <div class="side bottom w">B</div>
+        <div class="side left b">B</div>
+        <div class="side right w">B</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d4 spinback">
+        <div class="side front w">I</div>
+        <div class="side back w">I</div>
+        <div class="side top b">I</div>
+        <div class="side bottom b">I</div>
+        <div class="side left w">I</div>
+        <div class="side right b">I</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d5 spin">
+        <div class="side front b">T</div>
+        <div class="side back b">T</div>
+        <div class="side top w">T</div>
+        <div class="side bottom w">T</div>
+        <div class="side left b">T</div>
+        <div class="side right w">T</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d6 spinback">
+        <div class="side front w">E</div>
+        <div class="side back w">E</div>
+        <div class="side top b">E</div>
+        <div class="side bottom b">E</div>
+        <div class="side left w">E</div>
+        <div class="side right b">E</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d7 spin">
+        <div class="side front b">S</div>
+        <div class="side back b">S</div>
+        <div class="side top w">S</div>
+        <div class="side bottom w">S</div>
+        <div class="side left b">S</div>
+        <div class="side right w">S</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="cube d8 spinback">
+        <div class="side front w">H</div>
+        <div class="side back w">H</div>
+        <div class="side top b">H</div>
+        <div class="side bottom b">H</div>
+        <div class="side left w">H</div>
+        <div class="side right b">H</div>
+      </div>
+    </div>
+</body>
+
+</html>
